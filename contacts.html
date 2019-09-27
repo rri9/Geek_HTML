@@ -13,10 +13,10 @@
    </ul>
    <h1>Напишите нам</h1>
    <form action="#">
-       Имя: <br><input type="text" placeholder="Введите Ваше имя"><br>
+       Имя: <br><input type="text" placeholder="Введите Ваше имя" required><br>
        Пол:<br>
        М<input type="radio"> Ж<input type="radio" checked><br>
-       E-mail: <br> <input type="text" placeholder="Введите email"><br>
+       E-mail: <br> <input type="email" placeholder="Введите email" required><br>
        Раздел <br>
        <select size="1">
            <option>Вопрос о товаре</option>
@@ -24,9 +24,9 @@
            <option>Техническая поддержка</option>
        </select><br>
        Тема: <br>
-       <input type="text" size="30" placeholder="Тема письма"><br>
+       <input type="text" size="30" placeholder="Тема письма" required><br>
        Текст <br>
-       <textarea rows="7" cols="50" placeholder="Введите Ваше сообщение"></textarea><br>
+       <textarea rows="7" cols="50" placeholder="Введите Ваше сообщение" required></textarea><br>
        <input type="submit" value="Отправить сообщение">
        <input type="reset" value="Очистить форму">
    </form>
