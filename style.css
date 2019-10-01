@@ -1,0 +1,91 @@
+body {
+    background: #f8f8f8;
+}
+/*Меню в шапке*/
+.menu{
+    list-style-type: none;
+    
+}
+.menu A:any-link{
+    text-decoration: none;
+    color: brown;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+.menu A:hover{
+    text-decoration: underline;
+}
+
+/*Страница товара*/
+.goods h1 {
+    text-align: center;
+}
+.goods h3 {
+    color: black;
+    font-size: 18px; 
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.goods img {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: lightgrey;
+}
+.short_description{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.long_description{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.specs {
+    background-color: azure;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style-image: url(/img/specs_marker.png);
+    color: darkgreen;
+}
+.specs ul li {
+    font-style: normal;
+    font-weight: normal;
+    list-style-image: url(/img/specs_marker1.png);
+}
+#price{
+    color: darkblue;
+    background-color: transparent;
+}
+/*Footer*/
+.footer {
+    text-align: center;
+}
+/*Contacts*/
+.contacts input, textarea, select {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: monospace;
+}
+.contacts input::placeholder, textarea::placeholder, select {
+    font-size: 12px;
+    font-weight: normal;
+    
+    color: cadetblue;
+}
+#contacts_name, #contacts_email, select{
+    width: 200px;
+    height: 1.5em;
+}
+#contacts_theme, #contacts_message {
+    width: 350px;
+    height: 1.5em;
+}
+#contacts_message{
+    height: 100px;
+}
