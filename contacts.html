@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-   <ul class="menu">
-       <li><a href="index.html">Главная</a></li>
-       <li><a href="catalog.html">Каталог</a></li>
-       <li>Контакты</li>
-       <hr>
-   </ul>
+<body class="contacts">
+    <ul class="menu">
+        <li><a href="index.html" >Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>    
+<hr>
    <h1>Напишите нам</h1>
    <form action="#">
-       Имя: <br><input type="text" placeholder="Введите Ваше имя" required><br>
+       Имя: <br><input type="text" placeholder="Введите Ваше имя" required name="name" id="contacts_name"><br>
        Пол:<br>
        М<input type="radio"> Ж<input type="radio" checked><br>
-       E-mail: <br> <input type="email" placeholder="Введите email" required><br>
+       E-mail: <br> <input type="email" placeholder="Введите email" required name="email" id="contacts_email"><br>
        Раздел <br>
-       <select size="1">
+       <select size="1" name="question">
            <option>Вопрос о товаре</option>
            <option>Оплата и доставка</option>
            <option>Техническая поддержка</option>
        </select><br>
        Тема: <br>
-       <input type="text" size="30" placeholder="Тема письма" required><br>
+       <input type="text" placeholder="Тема письма" required name="theme" id="contacts_theme"><br>
        Текст <br>
-       <textarea rows="7" cols="50" placeholder="Введите Ваше сообщение" required></textarea><br>
+       <textarea placeholder="Введите Ваше сообщение" required name="message" id="contacts_message"></textarea><br>
        <input type="submit" value="Отправить сообщение">
        <input type="reset" value="Очистить форму">
    </form>
@@ -37,6 +38,6 @@
    Мы на карте:<br>
    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5cc982d87cabb684f41684c0d4b69ead92b8f21037abc7c83a4d49eecf7412ef&amp;width=548&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
    <hr>
-   <p align="center">Все права защищены. &copy; 2019</p>
+   <p class="footer">Все права защищены. &copy; 2019</p>
 </body>
 </html>
