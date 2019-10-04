@@ -2,35 +2,39 @@ body {
     background: #f8f8f8;
 }
 /*Меню в шапке*/
-.menu{
+.header ul{
     list-style-type: none;
     
 }
-.menu A:any-link{
+.header A:any-link{
     text-decoration: none;
-    color: brown;
+    color: sandybrown;
     font-family: cursive;
     font-weight: bold;
     font-size: 18px;
 }
-.menu A:hover{
+.header A:hover{
     text-decoration: underline;
+    color: saddlebrown;
 }
 
 /*Страница товара*/
 .goods h1 {
     text-align: center;
 }
-.goods h3 {
+.DescriptionGroups {
     color: black;
     font-size: 18px; 
     font-weight: 400;
     background-color: #eaeaea;
 }
-.goods img {
+.goods img[alt*="Квадрокоптер"] {
     outline-style: solid;
     outline-width: 1px;
     outline-color: lightgrey;
+}
+.goods img[alt*="Квадрокоптер"]:hover{
+    outline-style: none;
 }
 .short_description{
     color: #707070;
@@ -38,26 +42,55 @@ body {
     font-style: italic;
     line-height: 16px;
 }
-.long_description{
+.long_description h3{
     color: #484343;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-.specs {
-    background-color: azure;
-    font-style: italic;
-    font-family: sans-serif;
+.long_description p {
+    margin-top: 0;
+    padding-top: 0;
+}
+.long_description p::first-letter{
+    font-size: 18px;
+    font-family: "Arial";
+    color: darkslategrey;
+}
+.specs{
+    /* border: 1px black solid; */
+    border-collapse: collapse;
+    color: #909090;
+    font-family: monospace;
+    font-size: 14px;
+}
+.specs td{
+    /* border: 1px black solid; */
+    width: 15%;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 7px;
+}
+.specs tr:nth-child(3n+1) td{ /*Группа свойств*/
     font-weight: bold;
-    list-style-image: url(/img/specs_marker.png);
-    color: darkgreen;
+    font-size: 20px;
+    text-align: left;
+    vertical-align: bottom;
+    /* padding-left: 50px; */
+    height: 50px;
 }
-.specs ul li {
-    font-style: normal;
-    font-weight: normal;
-    list-style-image: url(/img/specs_marker1.png);
+.specs tr:nth-child(3n+2) td:nth-child(2n+1), /*Подгруппа свойств*/
+.specs tr:nth-child(3n+3) td:nth-child(2n+1){
+    color: #44a8f2;
+    width: 1%;
 }
+.specs tr:first-child td{
+    height: 0;
+}
+
 #price{
     color: darkblue;
     background-color: transparent;
@@ -75,8 +108,10 @@ body {
 .contacts input::placeholder, textarea::placeholder, select {
     font-size: 12px;
     font-weight: normal;
-    
     color: cadetblue;
+}
+.contacts input[type="text"]{
+    text-transform: capitalize;
 }
 #contacts_name, #contacts_email, select{
     width: 200px;
@@ -88,4 +123,8 @@ body {
 }
 #contacts_message{
     height: 100px;
+}
+#contacts_email:focus{
+    background-color: antiquewhite;
+    color: firebrick;
 }
