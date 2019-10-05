@@ -4,14 +4,20 @@ body {
 /*Меню в шапке*/
 .header ul{
     list-style-type: none;
-    
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+}
+.header li {
+    display: inline-block;
+    margin: 10px;
+    padding: 2px;
 }
 .header A:any-link{
     text-decoration: none;
     color: sandybrown;
     font-family: cursive;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
 }
 .header A:hover{
     text-decoration: underline;
