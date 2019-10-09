@@ -1,3 +1,7 @@
+<!--
+TODO Перенести меню из index.html на все страницы (см. пути ссылок!)
+TODO Перенести изменения на странице товара на все товары
+-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,20 +9,17 @@
     <title>Главная страница</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="main_page">
+<div class="container">
 <div class="header">
-  <table>
-      <tr>
-          <td><img src="img/main1_large.png" alt="Магазин квадрокоптеров Жужело!" width="100" height="100"></td>
-          <td>
-              <ul>
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a href="catalog.html">Каталог</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
-              </ul>
-          </td>
-          </tr>
-          </table>   
+    <div id="logo"><img src="img/main1_large.png" alt="Магазин квадрокоптеров Жужело!" width="100" height="100"></div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
 </div>   <hr>
    
     <h1>Магазин квадрокоптеров Жужело<sup>&reg;</sup></h1>
@@ -31,5 +32,6 @@
     
     <hr>
     <div class="footer">Все права защищены. &copy; 2019</div>
+</div>
 </body>
 </html>
