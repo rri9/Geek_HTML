@@ -1,27 +1,23 @@
 /*
-TODO Fix Откуда в #logo img высота 104?
-TODO Fix Позиция меню: без float=left не выравнивается по центру по вертикали
-TODO Fix Текст на главной причесать (абзац после 1 строки, выравнивание и т.п.)
-TODO Fix Выравнивание цены по ценрту по вертикали
-TODO Fix Описание товара: по ширине
-TODO Fix Текст на главной: по ширине
+
+
+TODO Fix Footer прижать вниз
 */
 body {
     background: #f8f8f8;
+    min-height: 100vh;
+    margin: 0;
 }
 .container {    /*1a Ширина и выравнивание по ценрту*/
     width: 700px;
-    position: relative;
+/*    position: relative;*/
     margin: 0 auto;
-    /*left: 50%;
-    margin-left: -350px;
-*/
-/*    border: 2px solid black;*/
+    min-height: 100%;
 }
 /*Меню в шапке*/
 .header {
     height: 100px;    /*1b. Задать блоку с классом header значение высоты.*/
-    background: url(/img/header_i.png) no-repeat top; /* *8.Фоновое изображение для header */
+    background: url(img/header_i.png) no-repeat top; /* *8.Фоновое изображение для header */
     background-size: 640px 18px;
 }
 #logo {
@@ -30,7 +26,6 @@ body {
 }
 #menu {
     overflow: hidden;
-    
 }
 .main_page #menu {
     float: right;    /*1f. Прижать меню к правому краю.*/
@@ -57,9 +52,22 @@ body {
     text-decoration: underline;
     color: saddlebrown;
 }
-
+.main_page_about {
+    font: 16px/25px Sans-Serif;
+    text-align: justify;
+    text-indent: 2em;
+}
+.main_page_about a {
+    text-decoration: none;
+    color: sandybrown;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.main_page_about a:hover {
+    text-decoration: underline;
+}
 /*Страница товара*/
-.goods h1 {
+.goods h1, .main_page h1 {
     text-align: center;
 }
 .DescriptionGroups {
@@ -84,10 +92,11 @@ body {
 .short_description{
     color: #707070;
     font-size: 14px;
-    font-style: italic;
     line-height: 16px;
     overflow: hidden;
     padding-left: 10px;
+    text-align: justify;
+    text-indent: 2em;
 }
 .long_description h3{
     color: #484343;
@@ -169,14 +178,6 @@ body {
     display: block; /* Делаем блочным, чтобы задать высоту*/
     height: 0; /*Убираем высоту, т.к. даже пустой занимает место*/
 }
-/*Footer*/
-.footer {
-    height: 30px;    /*2a. Задать высоту.*/
-    background-color: gainsboro;    /*2b. Поменять цвет фона.*/
-    text-align: right;    /*2c. Прижать текст “Все права защищены” к правому краю*/
-    margin: 10px 10px 0px 0px;    /* и отодвинуть от верхней и
-правой границы.*/
-}
 /*Contacts*/
 .contacts input, textarea, select {
     font-size: 14px;
@@ -237,4 +238,17 @@ body {
 .catalog_goods:hover a {
     /* font-weight: bold; */
     text-shadow: 0px 0px 0px dimgray;
+}
+/*Footer*/
+.footer {
+    height: 30px;    /*2a. Задать высоту.*/
+    background-color: gainsboro;    /*2b. Поменять цвет фона.*/
+    text-align: right;    /*2c. Прижать текст “Все права защищены” к правому краю*/
+    padding: 10px 10px 0px 0px;    /* и отодвинуть от верхней и
+правой границы.*/
+    
+/*    width: 700px;*/
+/*    margin: 0 auto;*/
+/*    position: fixed;*/
+/*    bottom: 0px;*/
 }
