@@ -1,3 +1,7 @@
+<!--
+TODO Fix Заголовок Описание товара - отступ от картинки
+
+-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,31 +9,28 @@
     <title>Главная страница</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<div class="header">
-  <table>
-      <tr>
-          <td><img src="img/main1_large.png" alt="Магазин квадрокоптеров Жужело!" width="100" height="100"></td>
-          <td>
-              <ul>
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a href="catalog.html">Каталог</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
-              </ul>
-          </td>
-          </tr>
-          </table>   
+<body class="main_page">
+<div class="container">
+    <div class="header">
+    <div id="logo"><img src="img/main1_large.png" alt="Магазин квадрокоптеров Жужело!" width="100" height="100"></div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
 </div>   <hr>
-   
-    <h1>Магазин квадрокоптеров Жужело<sup>&reg;</sup></h1>
-    <p>    
-        Добро пожаловать в наш магазин летающей и жужжащей техники Жужело<sup>&reg;</sup><br>
-        Если Вам нравится летать по округе и наслаждаться красивыми видами, если Вы мечтаете снять супер видео с высоты птичьего полета или если Вы хотите промчаться по двору, распугивая ворон и кошек, то Вы в нужном месте!
-    </p>
-    <p>Открывайте скорее каталог и выбирайте!    
-    </p>
-    
-    <hr>
+    <div class="content">
+        <h1>Магазин квадрокоптеров Жужело<sup>&reg;</sup></h1>
+        <div class="main_page_about">
+            <p>Добро пожаловать в наш магазин летающей и жужжащей техники <b>Жужело<sup>&reg;</sup></b></p>
+            <p>Если Вам нравится летать по округе и наслаждаться красивыми видами, если Вы мечтаете снять супер видео с высоты птичьего полета или если Вы хотите промчаться по двору, распугивая ворон и кошек, то Вы в нужном месте!</p>
+            <p>Открывайте скорее <a href="catalog.html">каталог</a> и выбирайте!</p>
+        </div>
+        <hr>
+    </div>
     <div class="footer">Все права защищены. &copy; 2019</div>
+</div>
 </body>
 </html>

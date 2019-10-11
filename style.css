@@ -1,14 +1,44 @@
+html, body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+}
 body {
     background: #f8f8f8;
 }
+.container {    /*1a Ширина и выравнивание по ценрту*/
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+}
+.content {
+    padding-bottom: 30px;
+}
 /*Меню в шапке*/
+.header {
+    height: 100px;    /*1b. Задать блоку с классом header значение высоты.*/
+    background: url(img/header_i.png) no-repeat top; /* *8.Фоновое изображение для header */
+    background-size: 640px 18px;
+}
+#logo {
+    float: left;    /*1e. Разместить меню справа от логотипа.*/
+    margin-left: 100px;/*1c. Отодвинуть логотип от левого края.*/
+}
+#menu {
+    overflow: hidden;
+}
+.main_page #menu {
+    float: right;    /*1f. Прижать меню к правому краю.*/
+    overflow: hidden;
+}
 .header ul{
     list-style-type: none;
-    margin: 0px 0px 0px 20px;
+    margin-top: 30px;
     padding: 0px;
 }
 .header li {
-    display: inline-block;
+    display: inline-block;    /*d. Из вертикального меню сделать горизонтальное.*/
     margin: 10px;
     padding: 2px;
 }
@@ -23,9 +53,22 @@ body {
     text-decoration: underline;
     color: saddlebrown;
 }
-
+.main_page_about {
+    font: 16px/25px Sans-Serif;
+    text-align: justify;
+    text-indent: 2em;
+}
+.main_page_about a {
+    text-decoration: none;
+    color: sandybrown;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.main_page_about a:hover {
+    text-decoration: underline;
+}
 /*Страница товара*/
-.goods h1 {
+.goods h1, .main_page h1 {
     text-align: center;
 }
 .DescriptionGroups {
@@ -33,20 +76,28 @@ body {
     font-size: 18px; 
     font-weight: 400;
     background-color: #eaeaea;
+    overflow: hidden;
+    padding-left: 30px;
 }
-.goods img[alt*="Квадрокоптер"] {
+#pic_small {
+    float: left; /*3a. Разместить краткое описание товара справа от картинки*/
+}
+#pic_small img[alt*="Квадрокоптер"] {
     outline-style: solid;
     outline-width: 1px;
     outline-color: lightgrey;
 }
-.goods img[alt*="Квадрокоптер"]:hover{
+#pic_small img[alt*="Квадрокоптер"]:hover{
     outline-style: none;
 }
 .short_description{
     color: #707070;
     font-size: 14px;
-    font-style: italic;
     line-height: 16px;
+    overflow: hidden;
+    padding-left: 10px;
+    text-align: justify;
+    text-indent: 2em;
 }
 .long_description h3{
     color: #484343;
@@ -67,14 +118,12 @@ body {
     color: darkslategrey;
 }
 .specs{
-    /* border: 1px black solid; */
     border-collapse: collapse;
     color: #909090;
     font-family: monospace;
     font-size: 14px;
 }
 .specs td{
-    /* border: 1px black solid; */
     width: 15%;
     text-align: left;
     vertical-align: top;
@@ -85,7 +134,6 @@ body {
     font-size: 20px;
     text-align: left;
     vertical-align: bottom;
-    /* padding-left: 50px; */
     height: 50px;
 }
 .specs tr:nth-child(3n+2) td:nth-child(2n+1), /*Подгруппа свойств*/
@@ -96,14 +144,37 @@ body {
 .specs tr:first-child td{
     height: 0;
 }
-
+.buyblock {
+    height: 50px;
+}
 #price{
     color: darkblue;
+    font: 18px Arial;
     background-color: transparent;
+    float: left;
+    margin: 10px;
+    width: 200px;
+    line-height: 30px;
 }
-/*Footer*/
-.footer {
-    text-align: center;
+.buybutton{
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+}
+.buybutton button {
+    width: 100px;
+    height: 30px;
+    font: 18px Arial;
+}
+.buybutton button:hover {
+    font-weight: bold;
+}
+.clearleft:after {
+    content: ""; /*Выводим пусте поле*/
+    clear: left; /*Отменяем обтекание*/
+    visibility: hidden; /*Прячем пустое поле*/
+    display: block; /* Делаем блочным, чтобы задать высоту*/
+    height: 0; /*Убираем высоту, т.к. даже пустой занимает место*/
 }
 /*Contacts*/
 .contacts input, textarea, select {
@@ -133,4 +204,47 @@ body {
 #contacts_email:focus{
     background-color: antiquewhite;
     color: firebrick;
+}
+
+/*Страница каталога*/
+.catalog {
+    text-align: center;
+    position: relative;
+}
+.catalog_goods {
+    width: 300px;
+    height: 250px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    float: left; /*4b. Расположить элементы каталога горизонтально.*/
+    margin: 24px;
+}
+.catalog_goods__pic {
+    width: 100%;
+    height: 200px;
+}
+.catalog_goods>a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 70%;
+}
+.catalog_goods:hover {
+    box-shadow: 0px 0px 2px black;
+}
+.catalog_goods:hover a {
+    text-shadow: 0px 0px 0px dimgray;
+}
+/*Footer*/
+.footer {
+    height: 30px;    /*2a. Задать высоту.*/
+    background-color: gainsboro;    /*2b. Поменять цвет фона.*/
+    text-align: right;    /*2c. Прижать текст “Все права защищены” к правому краю*/
+    padding: 10px 10px 0px 0px;    /* и отодвинуть от верхней и
+правой границы.*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
