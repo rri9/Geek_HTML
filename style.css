@@ -1,6 +1,7 @@
 /*
-TODO Отцентрировать значок Поиск в меню 
+
 TODO Стилизовать кнопку Order us
+TODO Fix Подчеркивание активной featured ссылки выше общего подчеркивания
 */
 * {
     margin: 0;
@@ -46,8 +47,6 @@ body {
 .menu_list {
     list-style-type: none;
     display: inline-block;
-/*    height: 23px;*/
-/*    border: 1px solid black;*/
 }
 
 .menu_link {
@@ -59,8 +58,9 @@ body {
     color: #8c8c8c;
     text-decoration: none;
     padding: 10px 13px;
-/*    border: 1px solid blue;*/
+    vertical-align: middle;
 }
+
 .menu_link:hover {
     color: #212121;
 }
@@ -157,4 +157,43 @@ body {
 /*--------featured-product-------------*/
 .featured-product {
     height: 800px;
+}
+
+.featured-product_tab-control {
+    margin-top: 120px;
+
+}
+
+.featured-product_tab-control_menu {
+    width: 300px;
+    border-bottom: 1px solid;
+}
+
+.featured-product_tab-control_list {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+.featured-product_tab-control_link {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: bold;
+}
+.featured-product_tab-control_link_active {
+    font-weight: bold;
+    color: #212121;
+    border-bottom: 3px solid;
+}
+.featured-product_btn-ghost {
+    text-transform: uppercase;
+    float: right;
+}
+..featured-product_tab-content{}
+.featured-product_tab-content_item {
+    width: 270px;
+    height: 270px;
+    border: 1px solid;
+    /*TODO temp*/
 }
