@@ -1,6 +1,5 @@
 /*
-TODO Add font-family: Montserrat; (-Lite -Bold)
-
+TODO Отцентрировать значок Поиск в меню 
 */
 * {
     margin: 0;
@@ -16,10 +15,22 @@ body {
     margin: 0 auto;
 }
 
+/*--------Slider-------------------*/
 .slider {
     /*    width: 1366px;*/
     height: 800px;
-    background: url(img/slider_img.jpg) no-repeat;
+    background: url(img/slider_img.jpg);
+    position: relative;
+
+}
+
+.padding_site {
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+.navbar {
+    padding-top: 63px;
 }
 
 .menu,
@@ -27,9 +38,15 @@ body {
     text-transform: uppercase;
 }
 
+.menu {
+    float: right;
+}
+
 .menu_list {
     list-style-type: none;
     display: inline-block;
+/*    height: 23px;*/
+/*    border: 1px solid black;*/
 }
 
 .menu_link {
@@ -40,6 +57,11 @@ body {
     /*    text-align: right;*/
     color: #8c8c8c;
     text-decoration: none;
+    padding: 10px 13px;
+/*    border: 1px solid blue;*/
+}
+.menu_link:hover {
+    color: #212121;
 }
 
 .menu_link_active {
@@ -51,27 +73,31 @@ body {
 .slider_trending {
     font-size: 18px;
     font-weight: bold;
-    /*    line-height: 48px;*/
+    line-height: 48px;
     letter-spacing: 1.8px;
     /*    text-align: left;*/
     color: #43a047;
+    margin-top: 283px;
 }
 
 .slider_h2 {
     font-size: 62px;
     font-weight: 100;
-    /*    line-height: 72px;*/
+    line-height: 72px;
     /*    text-align: left;*/
     color: #212121;
 }
 
 .slider_content {
     font-size: 14px;
-        font-weight: 300;
-    /*    line-height: 24px;*/
+    font-weight: 300;
+    line-height: 24px;
     /*    text-align: left;*/
     color: #6c6c6c;
     text-transform: none;
+    width: 458px;
+    margin-top: 32px;
+    margin-bottom: 34px;
 }
 
 .slider_link {
@@ -90,6 +116,13 @@ body {
     display: inline-block;
 }
 
+.pagination {
+    position: absolute;
+    bottom: 19px;
+    width: 1170px;
+    text-align: center;
+}
+
 .circle {
     display: inline-block;
     width: 30px;
@@ -97,10 +130,30 @@ body {
     text-decoration: none;
     border-radius: 50%;
     background-color: #c7c7c7;
+    margin: 5px;
+}
+
+.circle:hover {
+    background-color: #212121;
 }
 
 .circle_active {
     width: 40px;
     height: 40px;
     background-color: #212121;
+    margin-bottom: 0;
+}
+
+.clearfloat::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+/*--------Slider end-------------------*/
+/*--------featured-product-------------*/
+.featured-product {
+    height: 800px;
 }
