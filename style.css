@@ -1,7 +1,7 @@
 /*
 TODO Стилизовать кнопку Order us
 TODO Featured: Explore all на уровень строки меню слева (флоат соседу+отмена флоата)
-TODO Featured: Выравнивание стрелки вправо Explore all
+TODO Featured: Выравнивание Explore all c Featured New
 TODO featured-product_tab-content наведение с появлением прозрачного фона
 */
 * {
@@ -47,6 +47,9 @@ body {
 /*--- Кнопка Explore all ---*/
 .btn-ghost {
     float: right;
+    line-height: 47px;
+/*    vertical-align: bottom;*/
+    
     }
 .btn-ghost_link {
     text-transform: uppercase;
@@ -56,6 +59,8 @@ body {
     letter-spacing: 3.6px;
     text-align: center;
     color: #212121;
+/*    display: inline-block;*/
+/*    vertical-align: bottom;*/
     }
 .btn-ghost_img {
     margin-left: 12px;
@@ -144,7 +149,7 @@ body {
     margin-bottom: 34px;
 }
 
-.slider_link {
+/*.slider_link {
     font-size: 18px;
     font-weight: bold;
     line-height: 45px;
@@ -158,7 +163,7 @@ body {
     width: 212px;
     height: 45px;
     display: inline-block;
-}
+}*/
 
 .pagination {
     position: absolute;
@@ -193,10 +198,13 @@ body {
 .featured-product {
     height: 609px;
 }
-
-.featured-product_tab-control {
+.featured-product_tab {
     padding-top: 120px;
+}
+.featured-product_tab-control {
+    
     width: 300px;
+    float: left;
 }
 
 .featured-product_tab-control_menu {
@@ -243,6 +251,7 @@ body {
 }*/
 .featured-product_tab-content {
     margin-top: 50px;
+    float: left;
 }
 .featured-product_tab-content_item {
     width: 270px;
@@ -254,12 +263,61 @@ body {
 .featured-product_tab-content_item:not(:last-child) {
     margin-right: 30px;
 }
-.featured-product_tab-content_item_transparent-1 {
+/*.featured-product_tab-content_item_transparent-1 {
     visibility: hidden;
     position: absolute;
 }
 .featured-product_tab-content_item-1:hover .featured-product_tab-content_item_transparent-1{
     visibility: visible;
+}*/
+
+.featured-product_tab-content_item-2 {
+    background: url(img/product-2.jpg);
+}
+.featured-product_tab-content_item-2:hover .featured-product_tab-content_transparent {
+    visibility: visible;
+    outline: 1px solid #9c9c9c;
+}
+.featured-product_tab-content_transparent {
+/*    visibility: hidden;*/
+    width: 270px;    /*надо ли размер?*/
+    height: 270px;
+    text-align: center;
+    background: url(img/featured_product_tab_content_transparent_back.png);
+    opacity: 0.9;
+}
+.featured-product_tab-content_transparent_link {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 62px;
+}
+.featured-product_tab-content_transparent_name {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    color: #212121;
+}
+.featured-product_tab-content_transparent_details {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    color: #6c6c6c;
+    }
+.button-right {    /*Круглая кнопка со стрелкой вправо*/
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    box-shadow: 0px 2px 4.9px 0.2px #21212159;
+    background-color: #ffffff;
+}
+.button-right img {
+    width: 15px;
+    height: 20px;
+    position: relative;
+    top: 14px;
+    left: 18px;
 }
 /*--------Featured-product end---------*/
 /*--------Promo-product----------------*/

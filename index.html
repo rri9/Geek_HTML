@@ -1,6 +1,7 @@
 <!--
 TODO <ul class="menu"> --- <ul class="menu clearfloat">
 TODO Зачем текст серого описания отображается не весь, и когда он нужен весь?
+TODO Featured product: картинка не ссылка, ссылки только при наведении
 -->
 <!DOCTYPE html>
 <html lang="ru">
@@ -28,21 +29,22 @@ TODO Зачем текст серого описания отображаетс�
             <p class="slider_trending">TRENDING</p>
             <h2 class="slider_h2">Fishnet Chair</h2>
             <p class="slider_content">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black</p>
-            <a href="#" class="slider_link">Order Us</a>
+            <a href="#" class="order-us">Order Us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></a>
         </div>
         <div class="pagination">
             <a href="#" class="circle"></a><a href="#" class="circle circle_active"></a><a href="#" class="circle"></a>
         </div>
     </div>
     <div class="featured-product padding-site">
-        <div class="featured-product_tab-control">
-            <ul class="featured-product_tab-control_menu">
-                <li class="featured-product_tab-control_list"><a href="#" class="featured-product_tab-control_link featured-product_tab-control_link_active">Featured</a></li>
-                <li class="featured-product_tab-control_list"><a href="#" class="featured-product_tab-control_link">New</a></li>
-            </ul>
+        <div class="featured-product_tab">
+            <div class="featured-product_tab-control">
+                <ul class="featured-product_tab-control_menu">
+                    <li class="featured-product_tab-control_list"><a href="#" class="featured-product_tab-control_link featured-product_tab-control_link_active">Featured</a></li>
+                    <li class="featured-product_tab-control_list"><a href="#" class="featured-product_tab-control_link">New</a></li>
+                </ul>
+            </div>
+            <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>
         </div>
-        <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>
-        
         <div class="featured-product_tab-content clearfloat">
             <div class="featured-product_tab-content_item featured-product_tab-content_item-1">
                 <div class="featured-product_tab-content_item_transparent-1">
@@ -51,7 +53,22 @@ TODO Зачем текст серого описания отображаетс�
                 </div>
                 <img src="img/product-1.jpg" alt="product-1">
             </div>
-            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"><img src="img/product-2.jpg" alt="product-2"></a></div>
+            
+            <div class="featured-product_tab-content_item featured-product_tab-content_item-2">
+                <div class="featured-product_tab-content_transparent">
+                    <a href="#" class="featured-product_tab-content_transparent_link">
+                        <div class="button-right">
+                            <img src="img/arrow_181.svg">
+                        </div>
+                        <div class="featured-product_tab-content_transparent_name">
+                            Fishnet Chair
+                        </div>
+                    </a>
+                    <div class="featured-product_tab-content_transparent_details">
+                        Seat and back with upholstery made of cold cure foam
+                    </div>
+                </div>
+            </div>
             <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a><img src="img/product-3.jpg" alt="product-3"></div>
             <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a><img src="img/product-4.jpg" alt="product-4"></div>
         </div>
@@ -62,7 +79,7 @@ TODO Зачем текст серого описания отображаетс�
                 <div class="promo-content_description_tag">exclusive</div>
                 <div class="promo-content_description_name">Fishnet Chair</div>
                 <div class="promo-content_description_details">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</div>
-                <div class="promo-content_description_button order-us">order us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></div>
+                <div class="promo-content_description_button"><a href="#" class="order-us">order us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></a></div>
             </div>
         </div>
         <div class="promo-content promo-content-2">
@@ -70,14 +87,14 @@ TODO Зачем текст серого описания отображаетс�
                 <div class="promo-content_description_tag">exclusive</div>
                 <div class="promo-content_description_name">Fishnet Chair</div>
                 <div class="promo-content_description_details">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</div>
-                <div class="promo-content_description_button order-us">order us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></div>
+                <div class="promo-content_description_button"><a href="#" class="order-us">order us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></a></div>
             </div>
         </div>
     </div>
     <div class="trending-products">
         <div class="trending-products_title">
             <div class="trending-products_title_text">Trending Products</div>
-            <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>
+<!--            <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>-->
         </div>
         <div class="trending-products_products"></div>
     </div>
