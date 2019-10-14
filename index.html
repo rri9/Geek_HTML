@@ -1,6 +1,6 @@
 <!--
 TODO <ul class="menu"> --- <ul class="menu clearfloat">
-
+TODO Зачем текст серого описания отображается не весь, и когда он нужен весь?
 -->
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,7 +12,7 @@ TODO <ul class="menu"> --- <ul class="menu clearfloat">
 </head>
 <body class="home_page">
 <div class="wrapper">
-    <div class="slider padding_site">
+    <div class="slider padding-site">
         <div class="navbar clearfloat">
             <a href=""><img src="img/logo.svg" alt="logo"></a>
             <ul class="menu clearfloat">
@@ -34,21 +34,52 @@ TODO <ul class="menu"> --- <ul class="menu clearfloat">
             <a href="#" class="circle"></a><a href="#" class="circle circle_active"></a><a href="#" class="circle"></a>
         </div>
     </div>
-    
-    <div class="featured-product">
+    <div class="featured-product padding-site">
         <div class="featured-product_tab-control">
             <ul class="featured-product_tab-control_menu">
                 <li class="featured-product_tab-control_list"><a href="#" class="featured-product_tab-control_link featured-product_tab-control_link_active">Featured</a></li>
                 <li class="featured-product_tab-control_list"><a href="#" class="featured-product_tab-control_link">New</a></li>
             </ul>
         </div>
-        <div class="featured-product_btn-ghost"><a href="#" class="featured-product_btn-ghost_link">explore all<img class="featured-product_btn-ghost_img" src="img/featured-product_btn.svg"></a></div>
-        <div class="featured-product_tab-content">
-            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a></div>
-            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a></div>
-            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a></div>
-            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a></div>
+        <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>
+        
+        <div class="featured-product_tab-content clearfloat">
+            <div class="featured-product_tab-content_item featured-product_tab-content_item-1">
+                <div class="featured-product_tab-content_item_transparent-1">
+                    1
+                    <a href="#"></a>
+                </div>
+                <img src="img/product-1.jpg" alt="product-1">
+            </div>
+            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"><img src="img/product-2.jpg" alt="product-2"></a></div>
+            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a><img src="img/product-3.jpg" alt="product-3"></div>
+            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a><img src="img/product-4.jpg" alt="product-4"></div>
         </div>
+    </div>
+    <div class="promo-product clearfloat">
+        <div class="promo-content promo-content-1">
+            <div class="promo-content_description">
+                <div class="promo-content_description_tag">exclusive</div>
+                <div class="promo-content_description_name">Fishnet Chair</div>
+                <div class="promo-content_description_details">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</div>
+                <div class="promo-content_description_button order-us">order us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></div>
+            </div>
+        </div>
+        <div class="promo-content promo-content-2">
+            <div class="promo-content_description">
+                <div class="promo-content_description_tag">exclusive</div>
+                <div class="promo-content_description_name">Fishnet Chair</div>
+                <div class="promo-content_description_details">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</div>
+                <div class="promo-content_description_button order-us">order us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="trending-products">
+        <div class="trending-products_title">
+            <div class="trending-products_title_text">Trending Products</div>
+            <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>
+        </div>
+        <div class="trending-products_products"></div>
     </div>
     
     <div class="footer">
