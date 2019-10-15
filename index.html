@@ -1,7 +1,5 @@
 <!--
-TODO <ul class="menu"> --- <ul class="menu clearfloat">
-TODO Зачем текст серого описания отображается не весь, и когда он нужен весь?
-TODO Featured product: картинка не ссылка, ссылки только при наведении
+
 -->
 <!DOCTYPE html>
 <html lang="ru">
@@ -26,7 +24,7 @@ TODO Featured product: картинка не ссылка, ссылки толь
             </ul>
         </div>
         <div class="slider_text">
-            <p class="slider_trending">TRENDING</p>
+            <p class="slider_tag"  id="slider_slider_tag">TRENDING</p>
             <h2 class="slider_h2">Fishnet Chair</h2>
             <p class="slider_content">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black</p>
             <a href="#" class="order-us">Order Us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></a>
@@ -46,31 +44,67 @@ TODO Featured product: картинка не ссылка, ссылки толь
             <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>
         </div>
         <div class="featured-product_tab-content clearfloat">
-            <div class="featured-product_tab-content_item featured-product_tab-content_item-1">
-                <div class="featured-product_tab-content_item_transparent-1">
-                    1
-                    <a href="#"></a>
-                </div>
-                <img src="img/product-1.jpg" alt="product-1">
-            </div>
             
+            <div class="featured-product_tab-content_item featured-product_tab-content_item-1">
+                <div class="featured-product_tab-content_transparent">
+                    <a href="#" class="featured-product_tab-content_transparent_link">
+                        <div class="button-right">
+                            <img src="img/arrow_181.svg">
+                        </div>
+                    </a>
+                        <div class="featured-product_tab-content_transparent_name">
+                            Fishnet Chair
+                        </div>
+                    <div class="featured-product_tab-content_transparent_details">
+                        Seat and back with upholstery made of cold cure foam
+                    </div>
+                </div>
+            </div>
             <div class="featured-product_tab-content_item featured-product_tab-content_item-2">
                 <div class="featured-product_tab-content_transparent">
                     <a href="#" class="featured-product_tab-content_transparent_link">
                         <div class="button-right">
                             <img src="img/arrow_181.svg">
                         </div>
+                    </a>
                         <div class="featured-product_tab-content_transparent_name">
                             Fishnet Chair
                         </div>
-                    </a>
                     <div class="featured-product_tab-content_transparent_details">
                         Seat and back with upholstery made of cold cure foam
                     </div>
                 </div>
             </div>
-            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a><img src="img/product-3.jpg" alt="product-3"></div>
-            <div class="featured-product_tab-content_item"><a href="#" class="featured-product_tab-content_item_link"></a><img src="img/product-4.jpg" alt="product-4"></div>
+            <div class="featured-product_tab-content_item featured-product_tab-content_item-3">
+                <div class="featured-product_tab-content_transparent">
+                    <a href="#" class="featured-product_tab-content_transparent_link">
+                        <div class="button-right">
+                            <img src="img/arrow_181.svg">
+                        </div>
+                    </a>
+                        <div class="featured-product_tab-content_transparent_name">
+                            Fishnet Chair
+                        </div>
+                    <div class="featured-product_tab-content_transparent_details">
+                        Seat and back with upholstery made of cold cure foam
+                    </div>
+                </div>
+            </div>
+            <div class="featured-product_tab-content_item featured-product_tab-content_item-4">
+                <div class="featured-product_tab-content_transparent">
+                    <a href="#" class="featured-product_tab-content_transparent_link">
+                        <div class="button-right">
+                            <img src="img/arrow_181.svg">
+                        </div>
+                    </a>
+                        <div class="featured-product_tab-content_transparent_name">
+                            Fishnet Chair
+                        </div>
+                    <div class="featured-product_tab-content_transparent_details">
+                        Seat and back with upholstery made of cold cure foam
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="promo-product clearfloat">
@@ -91,13 +125,32 @@ TODO Featured product: картинка не ссылка, ссылки толь
             </div>
         </div>
     </div>
-    <div class="trending-products">
-        <div class="trending-products_title">
+    <div class="trending-products padding-site">
+        <div class="trending-products_title clearfloat">
             <div class="trending-products_title_text">Trending Products</div>
-<!--            <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>-->
+            <div class="btn-ghost"><a href="#" class="btn-ghost_link">explore all<img class="btn-ghost_img" src="img/btn.svg"></a></div>
         </div>
-        <div class="trending-products_products"></div>
+        <div class="trending-products_products-area clearfloat">
+            <div class="trending-products_product trending-products_product11"><a href="#"></a></div>
+            <div class="trending-products_product trending-products_product21"><a href="#"></a></div>
+            <div class="trending-products_product trending-products_product31"><a href="#"></a></div>
+            <div class="trending-products_product trending-products_product41"><a href="#"></a></div>
+            <div class="trending-products_product trending-products_product5"><a href="#"></a></div>
+            <div class="trending-products_product trending-products_product6"><a href="#"></a></div>
+        </div>
     </div>
+    <div class="hot-deals padding-site">
+        <div class="hot-deals_text">
+            <p class="hot-deals_tag" id="hot-deal_slider_tag">hot deals</p>
+            <h2 class="hot-deals_h2">Fishnet Chair</h2>
+            <p class="hot-deals_content">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black</p>
+            <a href="#" class="order-us">Order Us<img class="order-us_arrow-r" src="img/order-us_arrow-r.svg"></a>
+        </div>
+        <div class="pagination">
+            <a href="#" class="circle"></a><a href="#" class="circle circle_active"></a><a href="#" class="circle"></a>
+        </div>
+    </div>
+    
     
     <div class="footer">
     </div>
