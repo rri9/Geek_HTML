@@ -1,4 +1,12 @@
 /*
+TODO Доделать главную страницу
+DONE Fix slider text position
+DONE Добавить подчеркивание меню при наведении
+TODO Появление стрелочки вправо при наведени на ссылку OrderUs ExploreAll?
+TODO Эффект нажатия на кнопку :active {text-shadow: none}
+TODO Скрытие текста выходящего за границу контейнера
+
+    TOLEARN normalize.css
 */
 * {
     margin: 0;
@@ -89,7 +97,7 @@ body {
     text-transform: uppercase;
     }
 
-.slider_tag,
+.slider_tag {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1.8px;
@@ -141,7 +149,11 @@ body {
     }
 .menu_link:hover {
     color: #212121;
+    border-bottom: 3px solid #8c8c8c;
     }
+.menu_link_search:hover {
+    border-bottom: none;
+}
 .menu_link_active {
     font-weight: bold;
     color: #212121;
