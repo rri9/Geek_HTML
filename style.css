@@ -1,10 +1,11 @@
 /*
 TODO Доделать главную страницу
-DONE Fix slider text position
-DONE Добавить подчеркивание меню при наведении
-TODO Появление стрелочки вправо при наведени на ссылку OrderUs ExploreAll?
-TODO Эффект нажатия на кнопку :active {text-shadow: none}
+  DONE Fix slider text position
+  DONE Добавить подчеркивание меню при наведении
+  DONE Появление стрелочки вправо при наведени на ссылку OrderUs ExploreAll?
+  DONE Эффект нажатия на кнопку :active {text-shadow: none}
 TODO Скрытие текста выходящего за границу контейнера
+TODO Прижать футер вниз
 
     TOLEARN normalize.css
 */
@@ -51,9 +52,16 @@ body {
     }
 .order-us_arrow-r {
     margin-left: 22px;
+    visibility: hidden;
     }
 .order-us:hover {
     box-shadow: 0px 2px 10px 0.2px #21212159;
+    }
+.order-us:hover .order-us_arrow-r {
+    visibility: visible;
+}
+.order-us:active {
+    box-shadow: inset 0px 0px 10px 0.2px #21212159;
     }
 /*--- Кнопка Explore all ---*/
 .btn-ghost {
@@ -93,34 +101,43 @@ body {
     }
 .menu,
 .slider_text,
-.hot-deals_text{
+.hot-deals_text,
+.exclusive-products_tag {
     text-transform: uppercase;
     }
 
-.slider_tag {
+.tag {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1.8px;
-    margin-top: 283px;
     }
-#slider_slider_tag {
+#slider_tag {
     color: #43a047;
+    margin-top: 288px;
     }
 #hot-deal_slider_tag {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1.8px;
     color: #e53935;
     padding-top: 287px;
     }
+.exclusive-products_tag {
+    color: #1e88e5;
+    padding-top: 186px;
+}
 .slider_h2,
-.hot-deals_h2{
+.hot-deals_h2 {
     font-size: 62px;
     font-weight: 100;
     color: #212121;
     }
+.exclusive-products_h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #212121;
+    margin-top: 18px;
+}
 .slider_content,
-.hot-deals_content {
+.hot-deals_content,
+.exclusive-products_content {
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -130,7 +147,11 @@ body {
     margin-top: 32px;
     margin-bottom: 34px;
     }
-
+.exclusive-products_content {
+    width: 342px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 .menu {
     float: right;
     }
@@ -390,3 +411,126 @@ body {
     background: url(img/product-6.jpg);
     }
 /*--------Trending-product end---------*/
+/*--------Exclusive-product------------*/
+.exclusive-products {    /* Try flex first time! */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    height: 810px;
+    }
+.exclusive-products_product-1 {
+    width: 570px;
+    height: 570px;
+    background: url(img/excl_product-1.jpg);
+    }
+.exclusive-products_product-2 {
+    width: 270px;
+    height: 270px;
+    background: url(img/excl_product-2.jpg);
+    margin-bottom: 30px;
+    }
+.exclusive-products_product-3 {
+    width: 270px;
+    height: 270px;
+    background: url(img/excl_product-3.jpg);
+    margin-bottom: 30px;
+    }
+.exclusive-products_product-4 {
+    width: 270px;
+    height: 270px;
+    background: url(img/excl_product-4.jpg);
+    
+    }
+.exclusive-products_product-5 {
+    width: 270px;
+    height: 270px;
+    background: url(img/excl_product-5.jpg);
+    }
+.exclusive-products_text {
+    margin-left: 30px;
+    }
+/*--------Exclusive-product end--------*/
+/*--------Mobile-app-------------------*/
+.mobile-app {
+    background: url(img/mobile-app_backimg.jpg);
+    height: 516px;
+    }
+.mobile-app_content {
+    width: 472px;
+    padding-top: 125px;
+    padding-left: 98px;
+    }
+.mobile-app_content_tag {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    }
+.mobile-app_content_name {
+    font-size: 62px;
+    font-weight: 100;
+    /*line-height: 1.16;*/
+    color: #212121;
+    text-transform: uppercase;
+    }
+.mobile-app_content_details {
+    font-size: 22px;
+    font-weight: 300;
+    color: #6c6c6c;
+    margin: 20px 0 30px;
+    }
+.mobile-app_content_stores img:hover {
+    box-shadow: 1px 1px 5px 0px #000;
+    border-radius: 7px;
+    }
+.mobile-app_content_appstore {
+    margin-right: 10px;
+    }
+.mobile-app_content_googleplay {}
+/*--------Mobile-app end---------------*/
+/*--------Footer-----------------------*/
+.footer {
+    background: url(img/footer-back.jpg);
+    }
+.footer_content {
+    padding-top: 120px;
+    }
+.footer_1 {}
+.footer_2 {}
+.footer_4 {}
+.footer_lastline {}
+.footer_lastline_copy {}
+.footer_lastline_social {}
+.footer_lastline_terms {}
+.footer_tag {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    }
+.footer_text {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #212121;
+    }
+.footer_links {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    }
+.footer_links a {
+    text-decoration: none;
+    color: #212121;
+    }
+.footer_links_1 {}
+.footer_links_2 {}
+/*--------Footer end-------------------*/
