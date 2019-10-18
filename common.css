@@ -1,3 +1,39 @@
-/*---Tab-control common-*/
-
-/*---Tab-control end----*/
+/*
+TODO Перенести общие стили из style.css
+*/
+/*---Tab-control common------------*/
+.tab-control {    /* Контейнер меню */
+    
+    }
+.tab-control_menu { /* Меню ul */
+    list-style-type: none;
+    
+    }
+.tab-control_list { /* Меню li */
+    float: left;
+    }
+.tab-control_link { /* Меню ссылка */
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    }
+.tab-control_link_active {
+    font-weight: bold;
+    color: #212121;
+    border-bottom: 3px solid;
+    }
+.tab-control_link:hover {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+    }
+.tab-control_line {
+    width: 300px;
+    height: 1px;
+    border-bottom: 1px solid;
+    }
+/*---Tab-control common end--------*/
