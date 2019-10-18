@@ -59,6 +59,7 @@ html, body {
 }
 .order-us:active {
     box-shadow: inset 0px 0px 10px 0.2px #21212159;
+    transform: scale(0.99, 0.99);
     }
 /*--- Кнопка Explore all ---*/
 .btn-ghost {
