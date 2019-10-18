@@ -650,7 +650,17 @@ html, body {
     padding-left: 15px;
     font-size: 14px;
 }
+.footer_4_email button {
+    border: none;
+    background: none;
+    }
 .footer_4_email img {
     margin-left: -40px;
 }
+.footer_4_email:hover img {
+    transform: scale(1.2, 1.2);
+    }
+.footer_4_email:active img {
+    transform: scale(0.95, 0.95);
+    }
 /*--------Footer end-------------------*/
