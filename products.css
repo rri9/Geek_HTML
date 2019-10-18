@@ -14,11 +14,28 @@
 }
 /*---Products Slider end---------*/
 /*---Products Tab-control--------*/
-.tab-control {
+.products .tab-control {
     margin: 70px 0 50px;
-/*    text-transform: uppercase;*/
-}
-
+    }
+.products_reload {
+    width: 70px;
+    height: 70px;
+    margin: 30px auto 100px;
+    }
+.products_reload form button {
+    border: none;
+    padding: 20.5px 14px;
+    background: none;
+    }
+.products_reload:hover form button {
+    background: url(img/reload_back.png) no-repeat;
+    }
+.products_reload:hover form button img {
+    transform: scale(1.05, 1.05);
+    }
+.products_reload:active form button img {
+    transform: scale(0.95, 0.95);
+    }
 /*---Products Tab-control end----*/
 
 /*------------------------------------------------------------*/
