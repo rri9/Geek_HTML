@@ -13,14 +13,17 @@ TODO Прижать футер вниз
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+html, body {
+    height: 100%;    /*footer to bottom*/
+}
 .wrapper {
     width: 1366px;
     margin: 0 auto;
+    min-height: 100%;    /*footer to bottom*/
+    position: relative;  /*footer to bottom*/
 }
 .padding-site {    /* Боковые отступы */
     padding-left: 98px;
@@ -552,7 +555,12 @@ body {
 /*--------Footer-----------------------*/
 .footer {
     background: url(img/footer-back.jpg);
+    position: absolute;    /*footer to bottom*/
+    bottom: 0;             /*footer to bottom*/
     }
+.clr {                     /*footer to bottom*/
+    height: 384px;
+}
 .footer_content {
     padding-top: 120px;
     display: flex;
