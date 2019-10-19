@@ -36,6 +36,10 @@
 .products_reload:active form button img {
     transform: scale(0.95, 0.95);
     }
+.products_reload form button:focus {
+    border: none;
+    outline: none;
+}
 /*---Products Tab-control end----*/
 
 /*------------------------------------------------------------*/
