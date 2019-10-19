@@ -1,7 +1,6 @@
 /*
 TODO Перенести общие стили из style.css
 TODO В меню slider добавить эффекты на кнопку поиск
-TODO Tab-control Подчеркивание общее - убрать разрыв с подчеркиваением активного пункта меню
 */
 /*---Tab-control common------------*/
 .tab-control {    /* Контейнер меню */
@@ -37,5 +36,6 @@ TODO Tab-control Подчеркивание общее - убрать разры
     width: 300px;
     height: 1px;
     border-bottom: 1px solid;
+    box-sizing: border-box;
     }
 /*---Tab-control common end--------*/
