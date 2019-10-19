@@ -225,6 +225,13 @@ html, body {
 .menu_link_search:hover {
     border-bottom: none;
 }
+.menu_link_search:hover img {
+    transform: scale(1.1,1.1);
+}
+.menu_link_search:active img {
+    transform: scale(.9,.9);
+}
+
 .menu_link_active {
     font-weight: bold;
     color: #212121;
