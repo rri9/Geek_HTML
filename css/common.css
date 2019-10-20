@@ -99,7 +99,7 @@ TODO Иконочные шрифты вместо картинок соц.сет
 /*---Tab-control common end--------*/
 /*--------Footer-----------------------*/
 .footer {
-    background: url(img/footer-back.jpg);
+    background: url(../img/footer-back.jpg);
     position: absolute;    /*footer to bottom*/
     bottom: 0;             /*footer to bottom*/
     }

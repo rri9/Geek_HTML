@@ -25,7 +25,7 @@ html, body {
     visibility: hidden;
     width: 270px;  
     height: 270px;
-    background: url(img/featured_product_tab_content_transparent_back.png);
+    background: url(../img/featured_product_tab_content_transparent_back.png);
     opacity: 0.9;
     }
 .exclusive-product:hover .product270_transparent {
@@ -80,10 +80,10 @@ html, body {
     position: relative;
     }
 .slider {
-    background: url(img/slider_img.jpg);
+    background: url(../img/slider_img.jpg);
     }
 .hot-deals {
-    background: url(img/hot-deals.jpg);
+    background: url(../img/hot-deals.jpg);
     margin-top: 90px;
     }
 .navbar {
@@ -253,16 +253,16 @@ html, body {
     margin-right: 30px;
     }
 .featured-product_tab-content_item-1 {
-    background: url(img/product-1.jpg);
+    background: url(../img/product-1.jpg);
     }
 .featured-product_tab-content_item-2 {
-    background: url(img/product-2.jpg);
+    background: url(../img/product-2.jpg);
     }
 .featured-product_tab-content_item-3 {
-    background: url(img/product-3.jpg);
+    background: url(../img/product-3.jpg);
     }
 .featured-product_tab-content_item-4 {
-    background: url(img/product-4.jpg);
+    background: url(../img/product-4.jpg);
     }
 .featured-product_tab-content_item:hover .featured-product_tab-content_transparent {
     visibility: visible;
@@ -272,7 +272,7 @@ html, body {
     visibility: hidden;
     width: 270px;  
     height: 270px;
-    background: url(img/featured_product_tab_content_transparent_back.png);
+    background: url(../img/featured_product_tab_content_transparent_back.png);
     opacity: 0.9;
     }
 .featured-product_tab-content_transparent_link {
@@ -306,10 +306,10 @@ html, body {
     float: left;
     }
 .promo-content-1 {
-    background: url(img/promo-1.jpg);
+    background: url(../img/promo-1.jpg);
     }
 .promo-content-2 {
-    background: url(img/promo-2.jpg);
+    background: url(../img/promo-2.jpg);
     }
 .promo-content_description {
     margin-left: 50px;
@@ -373,21 +373,21 @@ html, body {
     box-shadow: 0px 2px 5px 0.2px #21212159;
     }
 .trending-products_product11 {
-    background: url(img/product-11.jpg);
+    background: url(../img/product-11.jpg);
     }
 .trending-products_product21 {
-    background: url(img/product-21.jpg);
+    background: url(../img/product-21.jpg);
     }
 .trending-products_product31 {
-    background: url(img/product-31.jpg);
+    background: url(../img/product-31.jpg);
     }
 .trending-products_product41 {
-    background: url(img/product-41.jpg);
+    background: url(../img/product-41.jpg);
     }
 .trending-products_product5 {
-    background: url(img/product-5.jpg);}
+    background: url(../img/product-5.jpg);}
 .trending-products_product6 {
-    background: url(img/product-6.jpg);
+    background: url(../img/product-6.jpg);
     }
 /*--------Trending-product end---------*/
 /*--------Exclusive-product------------*/
@@ -405,30 +405,30 @@ html, body {
 .exclusive-products_product-1 {
     width: 570px;
     height: 570px;
-    background: url(img/excl_product-1.jpg);
+    background: url(../img/excl_product-1.jpg);
     }
 .exclusive-products_product-2 {
     width: 270px;
     height: 270px;
-    background: url(img/excl_product-2.jpg);
+    background: url(../img/excl_product-2.jpg);
     margin-bottom: 30px;
     }
 .exclusive-products_product-3 {
     width: 270px;
     height: 270px;
-    background: url(img/excl_product-3.jpg);
+    background: url(../img/excl_product-3.jpg);
     margin-bottom: 30px;
     }
 .exclusive-products_product-4 {
     width: 270px;
     height: 270px;
-    background: url(img/excl_product-4.jpg);
+    background: url(../img/excl_product-4.jpg);
     
     }
 .exclusive-products_product-5 {
     width: 270px;
     height: 270px;
-    background: url(img/excl_product-5.jpg);
+    background: url(../img/excl_product-5.jpg);
     }
 .exclusive-products_text {
     margin-left: 30px;
@@ -436,7 +436,7 @@ html, body {
 /*--------Exclusive-product end--------*/
 /*--------Mobile-app-------------------*/
 .mobile-app {
-    background: url(img/mobile-app_backimg.jpg);
+    background: url(../img/mobile-app_backimg.jpg);
     height: 516px;
     }
 .mobile-app_content {

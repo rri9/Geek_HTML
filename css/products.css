@@ -28,7 +28,7 @@
     background: none;
     }
 .products_reload:hover form button {
-    background: url(img/reload_back.png) no-repeat;
+    background: url(../img/reload_back.png) no-repeat;
     }
 .products_reload:hover form button img {
     transform: scale(1.05, 1.05);
