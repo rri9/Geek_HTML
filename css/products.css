@@ -41,6 +41,40 @@
     outline: none;
     }
 /*---Products Tab-control end----*/
-/*------------------------------------------------------------*/
+/*---Detail----------------------*/
+.detail_slider {
+    height: 119px;
+    }
+.detail-links {
+    height: 70px;
+    background-color: #f4f4f4;
+    }
+.detail-links_menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    }
+.detail-links_list {
+    
+    }
+.detail-links_link {
+    display: inline-block;
+/*    height: 100%;*/
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #6c6c6c;
+    padding: 0 15px 0;
+    }
+.detail-links_link_active {
+    color: #212121;
+    }
+.detail-links_link:hover {
+    color: #212121;
+    }
+/*---Detail-links end------------*/
 /*------------------------------------------------------------*/
 /*------------------------------------------------------------*/
