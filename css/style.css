@@ -157,6 +157,9 @@ html, body {
     padding: 10px 13px;
     vertical-align: middle;
     }
+.menu_list:last-child {
+    margin-right: 45px;
+    }
 .menu_link:hover {
     color: #212121;
     border-bottom: 3px solid #8c8c8c;

@@ -31,6 +31,11 @@ TODO Иконочные шрифты вместо картинок соц.сет
     }
 .order-us_arrow-r {
     margin-left: 22px;
+    margin-bottom: -2px;
+    }
+.order-us_arrow-r_w {
+    margin-left: 22px;
+    margin-bottom: -5px;
     }
 .order-us:hover {
     box-shadow: 0px 2px 10px 0.2px #21212159;
@@ -224,3 +229,6 @@ TODO Иконочные шрифты вместо картинок соц.сет
     transform: scale(0.95, 0.95);
     }
 /*--------Footer end-------------------*/
+.space120 {
+    height: 120px;
+    }
