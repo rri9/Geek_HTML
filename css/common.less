@@ -1,6 +1,23 @@
 /*
-TODO Иконочные шрифты вместо картинок соц.сетей
 */
+@widthAll: 1366px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+html, body {
+    height: 100%;    /*footer to bottom*/
+}
+.wrapper {
+    max-width: @widthAll;
+    margin: 0 auto;
+    min-height: 100%;    /*footer to bottom*/
+    position: relative;  /*footer to bottom*/
+}
 .padding-site {    /* Боковые отступы */
     padding-left: 98px;
     padding-right: 98px;
@@ -232,3 +249,49 @@ TODO Иконочные шрифты вместо картинок соц.сет
 .space120 {
     height: 120px;
     }
+/*-------------------------------------*/
+@media screen and (min-width: 1000px) and (max-width:1400px) {
+    @widthAll: 1000px;
+    @footerHeight: 400px;
+    @footer4Width: 300px;
+    .wrapper {
+        max-width: @widthAll;
+    }
+    .footer {
+        max-width: @widthAll;
+        height: @footerHeight;
+    }
+    .footer_content {
+        padding-top: 20px;
+        height: @footerHeight - 20px;
+        
+    }
+    .clr {                     /*footer to bottom*/
+    height: @footerHeight;
+    }
+    .footer_lastline {
+//        min-width: auto;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .footer_item {}
+    .footer_1 {
+        width: 221px;
+    }
+    .footer_2 {
+        width: 280px;
+        .footer_links {
+            flex-direction: column;
+        }
+    }
+    .footer_4 {
+        width: @footer4Width;
+    }
+    .footer_4_email form {
+        width: @footer4Width;
+    }
+    .footer_4_email input {
+        width: @footer4Width;
+    }
+}

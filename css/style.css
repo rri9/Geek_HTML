@@ -4,26 +4,6 @@ TODO Скрытие текста выходящего за границу кон
 
     TOLEARN normalize.css
 */
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-html,
-body {
-  height: 100%;
-  /*footer to bottom*/
-}
-.wrapper {
-  width: 1366px;
-  margin: 0 auto;
-  min-height: 100%;
-  /*footer to bottom*/
-  position: relative;
-  /*footer to bottom*/
-}
 /*--- Появляющаяся при наведении ссылка на товар --*/
 .product270_transparent {
   visibility: hidden;
@@ -184,7 +164,9 @@ body {
 .pagination {
   position: absolute;
   bottom: 19px;
-  width: 1170px;
+  left: 50%;
+  margin-left: -65px;
+  width: 130px;
   text-align: center;
 }
 .circle {
@@ -474,3 +456,43 @@ body {
   margin-right: 10px;
 }
 /*--------Mobile-app end---------------*/
+/*-------------------------------------*/
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .menu_list:last-child {
+    margin-right: 0px;
+  }
+  .featured-product {
+    max-width: 804px;
+  }
+  .featured-product_tab-content {
+    margin-top: 50px;
+    max-width: 804px;
+  }
+  .featured-product_tab-content_item {
+    margin: 10px 50px;
+  }
+  .promo-product {
+    max-width: 1000px;
+    padding: 10px 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .promo-content {
+    float: none;
+  }
+  .exclusive-products {
+    max-width: 600px;
+    height: 1100px;
+    flex-direction: row;
+    box-sizing: content-box;
+    justify-content: space-around;
+  }
+  .exclusive-product {
+    margin: 10px;
+  }
+  .mobile-app {
+    max-width: 1000px;
+  }
+}

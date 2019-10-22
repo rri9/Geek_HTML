@@ -3,22 +3,12 @@ TODO Скрытие текста выходящего за границу кон
 
     TOLEARN normalize.css
 */
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-html, body {
-    height: 100%;    /*footer to bottom*/
-}
-.wrapper {
-    width: 1366px;
-    margin: 0 auto;
-    min-height: 100%;    /*footer to bottom*/
-    position: relative;  /*footer to bottom*/
-}
+@widthAll: 1366px;
+@paddingAll: 98px;
+
+@paginationWidth: 130px;
+@paginationWidthActiveCircle: 40px;
+@paginationWidthMargin: 5px;
 
 /*--- Появляющаяся при наведении ссылка на товар --*/
 .product270_transparent {
@@ -183,24 +173,26 @@ html, body {
 .pagination {
     position: absolute;
     bottom: 19px;
-    width: 1170px;
+    left: 50%;
+    margin-left: -@paginationWidth/2;
+    width: @paginationWidth;
     text-align: center;
     }
 .circle {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: (@paginationWidth - @paginationWidthActiveCircle - @paginationWidthMargin*6)/2;
+    height: (@paginationWidth - @paginationWidthActiveCircle - @paginationWidthMargin*6)/2;
     text-decoration: none;
     border-radius: 50%;
     background-color: #c7c7c7;
-    margin: 5px;
+    margin: @paginationWidthMargin;
     }
 .circle:hover {
     background-color: #212121;
     }
 .circle_active {
-    width: 40px;
-    height: 40px;
+    width: @paginationWidthActiveCircle;
+    height: @paginationWidthActiveCircle;
     background-color: #212121;
     margin-bottom: 0;
     }
@@ -476,3 +468,49 @@ html, body {
     }
 .mobile-app_content_googleplay {}
 /*--------Mobile-app end---------------*/
+/*-------------------------------------*/
+@media screen and (min-width: 1000px) and (max-width:1400px) {
+    @widthAll: 1000px;
+    @paddingAll: 98px;
+    .menu_list:last-child {
+        margin-right: 0px;
+    }
+    .featured-product {
+        max-width: @widthAll - @paddingAll*2;
+    }
+    .featured-product_tab-content {
+        margin-top: 50px;
+        max-width: @widthAll - @paddingAll*2;
+    }
+    .featured-product_tab-content_item {
+        
+    }
+    .featured-product_tab-content_item {
+        margin: 10px 50px;
+    }
+    .promo-product {
+        max-width: @widthAll;
+        padding: 10px @paddingAll;
+        padding: 10px @paddingAll;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .promo-content {
+        float: none;
+    }
+    .exclusive-products {
+        max-width: @widthAll - 400px;
+        height: 1100px;
+        flex-direction: row;
+        box-sizing: content-box;
+        justify-content: space-around;
+    }
+    .exclusive-product {
+        margin: 10px;
+    }
+    .mobile-app {
+        max-width: @widthAll;
+    }
+}
