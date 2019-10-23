@@ -449,7 +449,6 @@ TODO Скрытие текста выходящего за границу кон
 .mobile-app_content_name {
     font-size: 62px;
     font-weight: 100;
-    /*line-height: 1.16;*/
     color: #212121;
     text-transform: uppercase;
     }
@@ -469,7 +468,7 @@ TODO Скрытие текста выходящего за границу кон
 .mobile-app_content_googleplay {}
 /*--------Mobile-app end---------------*/
 /*-------------------------------------*/
-@media screen and (min-width: 1000px) and (max-width:1400px) {
+@media screen and (max-width:1400px) {
     @widthAll: 1000px;
     @paddingAll: 98px;
     .menu_list:last-child {
@@ -477,16 +476,23 @@ TODO Скрытие текста выходящего за границу кон
     }
     .featured-product {
         max-width: @widthAll - @paddingAll*2;
+        height: auto;
     }
     .featured-product_tab-content {
         margin-top: 50px;
-        max-width: @widthAll - @paddingAll*2;
+        max-width: @widthAll - @paddingAll * 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 600px;
+        padding: 0 80px 0;
     }
-    .featured-product_tab-content_item {
-        
+    .featured-product_tab-content_item{
+        float: none;
     }
-    .featured-product_tab-content_item {
-        margin: 10px 50px;
+    .featured-product_tab-content_item:not(:last-child) {
+        margin: 0; 
     }
     .promo-product {
         max-width: @widthAll;
@@ -499,6 +505,7 @@ TODO Скрытие текста выходящего за границу кон
     }
     .promo-content {
         float: none;
+        margin: 0 auto;
     }
     .exclusive-products {
         max-width: @widthAll - 400px;
@@ -506,6 +513,7 @@ TODO Скрытие текста выходящего за границу кон
         flex-direction: row;
         box-sizing: content-box;
         justify-content: space-around;
+        margin: 0 auto;
     }
     .exclusive-product {
         margin: 10px;

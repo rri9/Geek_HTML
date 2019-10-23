@@ -1,7 +1,4 @@
-/*
-*/
 @widthAll: 1366px;
-
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +25,7 @@ html, body {
     clear: both;
     visibility: hidden;
     height: 0;
+    width: 100%;
     }
 /*--- Кнопка ORDER US ---*/
 .order-us {
@@ -249,8 +247,11 @@ html, body {
 .space120 {
     height: 120px;
     }
+.hidden-recommend {
+    display: none;
+}
 /*-------------------------------------*/
-@media screen and (min-width: 1000px) and (max-width:1400px) {
+@media screen and (max-width:1400px) {
     @widthAll: 1000px;
     @footerHeight: 400px;
     @footer4Width: 300px;
@@ -270,10 +271,9 @@ html, body {
     height: @footerHeight;
     }
     .footer_lastline {
-//        min-width: auto;
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        margin: 0;
+        align-items: center;
     }
     .footer_item {}
     .footer_1 {
@@ -293,5 +293,14 @@ html, body {
     }
     .footer_4_email input {
         width: @footer4Width;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .wrapper {
+        display: none;
+    }
+    .hidden-recommend {
+        display: block;
     }
 }
