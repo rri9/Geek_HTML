@@ -1,9 +1,4 @@
-/*
-TODO Скрытие текста выходящего за границу контейнера
-
-    TOLEARN normalize.css
-*/
-@widthAll: 1366px;
+﻿@widthAll: 1366px;
 @paddingAll: 98px;
 
 @paginationWidth: 130px;
@@ -49,7 +44,8 @@ TODO Скрытие текста выходящего за границу кон
     width: 48px;
     height: 48px;
     border-radius: 24px;
-    box-shadow: 0px 2px 4.9px 0.2px #21212159;
+    -webkit-box-shadow: 0px 2px 4.9px 0.2px #21212159;
+            box-shadow: 0px 2px 4.9px 0.2px #21212159;
     background-color: #ffffff;
     }
 .button-right img {
@@ -60,7 +56,8 @@ TODO Скрытие текста выходящего за границу кон
     left: 18px;
     }
 .button-right:hover {
-    box-shadow: 0px 2px 10px 0.2px #21212159;
+    -webkit-box-shadow: 0px 2px 10px 0.2px #21212159;
+            box-shadow: 0px 2px 10px 0.2px #21212159;
     }
 
 /*--------Slider & Hot deals----------*/
@@ -158,10 +155,14 @@ TODO Скрытие текста выходящего за границу кон
     border-bottom: none;
 }
 .menu_link_search:hover img {
-    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+        -ms-transform: scale(1.1,1.1);
+            transform: scale(1.1,1.1);
 }
 .menu_link_search:active img {
-    transform: scale(.9,.9);
+    -webkit-transform: scale(.9,.9);
+        -ms-transform: scale(.9,.9);
+            transform: scale(.9,.9);
 }
 
 .menu_link_active {
@@ -242,7 +243,8 @@ TODO Скрытие текста выходящего за границу кон
     height: 270px;
     outline: 1px solid #f3f3f3;
     float: left;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     }
 .featured-product_tab-content_item:not(:last-child) {
     margin-right: 30px;
@@ -365,7 +367,8 @@ TODO Скрытие текста выходящего за границу кон
     height: 370px;
     }
 .trending-products_product:hover {
-    box-shadow: 0px 2px 5px 0.2px #21212159;
+    -webkit-box-shadow: 0px 2px 5px 0.2px #21212159;
+            box-shadow: 0px 2px 5px 0.2px #21212159;
     }
 .trending-products_product11 {
     background: url(../img/product-11.jpg);
@@ -387,12 +390,27 @@ TODO Скрытие текста выходящего за границу кон
 /*--------Trending-product end---------*/
 /*--------Exclusive-product------------*/
 .exclusive-products {    /* Try flex first time! */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: space-between;
-    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-top: 120px;
     padding-bottom: 120px;
     height: 810px;
@@ -459,7 +477,8 @@ TODO Скрытие текста выходящего за границу кон
     margin: 20px 0 30px;
     }
 .mobile-app_content_stores img:hover {
-    box-shadow: 1px 1px 5px 0px #000;
+    -webkit-box-shadow: 1px 1px 5px 0px #000;
+            box-shadow: 1px 1px 5px 0px #000;
     border-radius: 7px;
     }
 .mobile-app_content_appstore {
@@ -481,10 +500,20 @@ TODO Скрытие текста выходящего за границу кон
     .featured-product_tab-content {
         margin-top: 50px;
         max-width: @widthAll - @paddingAll * 2;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 600px;
         padding: 0 80px 0;
     }
@@ -498,10 +527,22 @@ TODO Скрытие текста выходящего за границу кон
         max-width: @widthAll;
         padding: 10px @paddingAll;
         padding: 10px @paddingAll;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+                align-content: center;
     }
     .promo-content {
         float: none;
@@ -510,9 +551,16 @@ TODO Скрытие текста выходящего за границу кон
     .exclusive-products {
         max-width: @widthAll - 400px;
         height: 1100px;
-        flex-direction: row;
-        box-sizing: content-box;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
         margin: 0 auto;
     }
     .exclusive-product {
